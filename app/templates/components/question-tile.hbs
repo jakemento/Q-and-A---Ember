@@ -1,10 +1,9 @@
-<li> {{question.text}}
+<li> {{#link-to 'question' question.id}}{{question.text}} {{/link-to}}
   {{#if isAuthorShowing}}
     <p> {{question.author}} </p>
   {{else}}
   <br>
     <button {{action 'authorShow'}}> Show Author </button>
   {{/if}}
-  {{update-question question=question update="update"}}
   <button class="btn btn-success" {{action 'delete' question}}> Delte </button>
 </li>

@@ -1,7 +1,6 @@
 # Q-and-a
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a site made for the javascript Epicodus course, week 3. This site was made using javascript and Ember, and is designed to be a message board for asking questions and getting answers.
 
 ## Prerequisites
 
@@ -50,4 +49,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

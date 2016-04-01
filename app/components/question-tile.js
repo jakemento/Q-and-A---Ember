@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   isAuthorShowing: false,
+  updateQuestionForm: false,
   actions: {
     authorShow: function() {
       this.set('isAuthorShowing', true);
@@ -14,7 +15,7 @@ export default Ember.Component.extend({
         this.sendAction('deleteQuestion', question);
       }
     },
-    update(question) {
+    update(question, params) {
       this.sendAction('update', question, params);
     }
   }

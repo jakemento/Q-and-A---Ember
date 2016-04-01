@@ -8,6 +8,11 @@ export default Ember.Component.extend({
     },
     authorHide: function() {
       this.set('isAuthorShowing', false);
+    },
+    delete(question) {
+      if (confirm('Are you sure you want to delete this Q?')) {
+        this.sendAction('deleteQuestion', question);
+      }
     }
   }
 });

@@ -3,7 +3,6 @@
     <p> {{question.author}} </p>
   {{else}}
   <br>
-    <button {{action 'authorShow'}}> Show Author </button>
+    <button class="btn btn-warning" {{action 'authorShow'}}> Show Author </button>
   {{/if}}
-  <button class="btn btn-success" {{action 'delete' question}}> Delte </button>
 </li>

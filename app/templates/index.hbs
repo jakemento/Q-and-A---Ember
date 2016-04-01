@@ -1,0 +1,9 @@
+<h1> Questions and Answers </h1>
+
+<h2> Ask a question, get an answer! </h2>
+
+<ul>
+  {{#each model as |question|}}
+      {{question-tile question=question}}
+  {{/each}}
+</ul>

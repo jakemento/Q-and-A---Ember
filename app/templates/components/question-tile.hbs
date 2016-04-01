@@ -2,7 +2,9 @@
   {{#if isAuthorShowing}}
     <p> {{question.author}} </p>
   {{else}}
+  <br>
     <button {{action 'authorShow'}}> Show Author </button>
   {{/if}}
-  <button {{action 'delete' question}}> Delte </button>
+  {{update-question question=question update="update"}}
+  <button class="btn btn-success" {{action 'delete' question}}> Delte </button>
 </li>

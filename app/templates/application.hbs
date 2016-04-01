@@ -1,7 +1,31 @@
 <header class= "jumbotron">
-  <center> <h1> Q & A</h1> </center>
-  {{#link-to 'index'}} Go Home {{/link-to}}
-  <hr>
+<br>
+<br>
+<br>
+<br>
+<div class="questionList">
+  {{#rl-dropdown-container class="dropdown"}}
+    {{#rl-dropdown-toggle class="btn btn-default"}}
+      Navigate Site <span class="caret"></span>
+    {{/rl-dropdown-toggle}}
+
+    {{#rl-dropdown tagName="ul" class="dropdown-menu" closeOnChildClick="a:link"}}
+    <li> {{#link-to 'index' tagName='li'}}
+      {{link-to 'Home'}}
+    {{/link-to}}    </li>
+    <li> {{#link-to 'question' 0 tagName='li'}}
+      {{link-to 'question 1'}}
+      {{/link-to}}    </li>
+    <li> {{#link-to 'question' 1 tagName='li'}}
+      {{link-to 'question 2'}}
+      {{/link-to}}    </li>
+      <li> {{#link-to 'question' '-KEHzYNZ9AT9Axg1c6YG' tagName='li'}}
+        {{link-to 'question 3'}}
+        {{/link-to}}    </li>
+    {{/rl-dropdown}}
+  {{/rl-dropdown-container}}
+</div>
+
 </header>
 
 <div class = "container">

@@ -41,3 +41,8 @@ li {
   font-size: 10px;
   background-color: gray;
 }
+
+.jumbotron {
+  background-image: url(http://www.walkinggospel.com/wpcontent/uploads/2014/09/Q-and-A.jpg);
+  background-repeat:repeat-x;
+}

@@ -1,5 +1,6 @@
 <h2> {{question.text}} </h2>
 
+
 {{question-detail question=model deleteQuestion="deleteQuestion"}}
 {{update-question question=model update="update"}}
 
@@ -15,3 +16,5 @@
 </ul>
 
 {{new-answer saveB="saveC" post=model}}
+<br>
+<span class = "boldText"> {{#link-to 'index'}} Back {{/link-to}} </span>

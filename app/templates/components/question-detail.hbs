@@ -3,3 +3,10 @@
 </h2>
 
 <button {{action 'delete' question}}>Delete Question </button>
+
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.text}} by {{answer.author}}</li>
+  {{/each}}
+</ul>

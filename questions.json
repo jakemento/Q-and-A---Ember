@@ -6,5 +6,9 @@
     "text": "What is your favorite programming language?",
     "author": "Jake S.",
     "notes": "nothing to see here..."
-  }]
+  }],
+  "answers": [{
+    "text": "70 MPH",
+    "author": "Jake S"
+    }]
 }

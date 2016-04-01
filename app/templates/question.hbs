@@ -9,11 +9,11 @@
 
 
 <h2 class="lessBold"> Answer(s): </h2>
-<ul>
-  {{#each model.answers as |answer|}}
-    {{answer-tile answer=answer edit="editAnswer" deleteAnswer="deleteAnswer"}}
-  {{/each}}
-</ul>
+  <ul>
+    {{#each model.answers as |answer|}}
+      {{answer-tile answer=answer edit="editAnswer" deleteAnswer="deleteAnswer"}}
+    {{/each}}
+  </ul>
 
 {{new-answer saveB="saveC" post=model}}
 <br>

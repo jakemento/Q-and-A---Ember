@@ -1,14 +1,17 @@
 <h2> {{question.text}} </h2>
 
-{{update-question question=model update="update"}}
 {{question-detail question=model deleteQuestion="deleteQuestion"}}
+{{update-question question=model update="update"}}
+
+<hr>
 
 
+
+<h2 class="lessBold"> Answer(s): </h2>
 <ul>
   {{#each model.answers as |answer|}}
     {{answer-tile answer=answer edit="editAnswer" deleteAnswer="deleteAnswer"}}
   {{/each}}
 </ul>
 
-<h2> Answer(s): </h2>
 {{new-answer saveB="saveC" post=model}}

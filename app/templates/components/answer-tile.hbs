@@ -1,4 +1,4 @@
-<h2>
- {{answer.text}} by {{answer.author}}
+<h2 class="boldText">
+  {{answer.text}}<br> <span class="authorText"> {{answer.author}} </span>
 </h2>
-<button {{action 'delete' comment}}>Delete Answer</button>
+<button {{action 'delete' answer}}>Delete Answer</button>

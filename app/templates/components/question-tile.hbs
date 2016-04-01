@@ -1,8 +1,12 @@
-<li> {{#link-to 'question' question.id}}{{question.text}} {{/link-to}}
+<li> {{#link-to 'question' question.id}} <span class="boldText"> {{question.text}} </span> {{/link-to}}
+  <br>
   {{#if isAuthorShowing}}
+
     <p> {{question.author}} </p>
   {{else}}
   <br>
     <button class="btn btn-warning" {{action 'authorShow'}}> Show Author </button>
   {{/if}}
 </li>
+  <br>
+  <hr class="short">

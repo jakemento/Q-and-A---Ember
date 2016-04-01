@@ -1,6 +1,6 @@
 {{#if updateQuestionForm}}
-  <h2> Update {{question.author}}'s question </h2>
-    <div>
+  <h2 class="lessBold"> Update <span class="authorText"> {{question.author}}'s</span> question: </h2>
+    <div class="boldText">
       <form>
         <div class="form-group">
           <label for="text">Question:</label>
@@ -22,6 +22,6 @@
     </div>
     <button {{action 'cancel'}}> Cancel </button>
 {{else}}
-    <button {{action 'updateQuestionForm'}}> Update </button>
+    <button {{action 'updateQuestionForm'}}> Update Question </button>
 
 {{/if}}

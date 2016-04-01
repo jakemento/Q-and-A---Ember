@@ -1,0 +1,43 @@
+.boldText {
+font-size: 22px;
+font-weight: bold;
+font-family: fantasy;
+
+}
+
+.lessBold {
+font-size: 18px;
+font-weight: lighter;
+font-family: fantasy;
+
+}
+
+.colorful {
+  color: maroon;
+}
+
+body {
+  background-color: black;
+}
+
+p, h1, h2, h3, li {
+  color: white;
+}
+
+.authorText {
+  color: maroon;
+}
+
+li {
+  list-style: decimal-leading-zero;
+}
+
+.short {
+  width: 75%;
+  border-color: pink;
+}
+
+.btn {
+  font-size: 10px;
+  background-color: gray;
+}

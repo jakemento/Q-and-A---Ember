@@ -1,5 +1,9 @@
-<h2>
-  Question: {{question.text}} <hr>  Author: {{question.author}} <br> <br> Notes: {{question.notes}}
+<h2 class="boldText">
+  Question: {{question.text}}
+</h2>
+<h2 class="lessBold">
+  Author: <span class="authorText"> {{question.author}} </span> <br> <br>
+  Notes: {{question.notes}}
 </h2>
 
 <button {{action 'delete' question}}>Delete Question </button>
@@ -7,6 +11,6 @@
 
 <ul>
   {{#each model.answers as |answer|}}
-    <li>{{answer.text}} by {{answer.author}}</li>
+    <li>{{answer.text}} by <span class="authorText"> {{answer.author}} </span> </li>
   {{/each}}
 </ul>

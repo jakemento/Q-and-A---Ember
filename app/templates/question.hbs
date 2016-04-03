@@ -1,16 +1,23 @@
-<h2> {{question.text}} </h2>
+<div class="container" id="border">
+  <div class="col-md-6">
 
-    {{question-detail question=model deleteQuestion="deleteQuestion"}}
-    {{update-question question=model update="update"}}
-<hr>
+    <h2> {{question.text}} </h2>
+        {{question-detail question=model deleteQuestion="deleteQuestion"}}
+        {{update-question question=model update="update"}}
+    <hr>
+    {{new-answer saveB="saveC" post=model}}
+    <span class = "boldText"> {{#link-to 'index'}} Back {{/link-to}} </span>
+  </div>
+  <div class="col-md-6" id="border2">
+    <h2 class="lessBold"> Answer(s): </h2>
+        <ul>
+          {{#each model.answers as |answer|}}
+          <div class="col-md-6">
+            {{answer-tile answer=answer edit="editAnswer" deleteAnswer="deleteAnswer"}}
+          </div>
+          {{/each}}
+        </ul>
 
-<h2 class="lessBold"> Answer(s): </h2>
-  <ul>
-    {{#each model.answers as |answer|}}
-      {{answer-tile answer=answer edit="editAnswer" deleteAnswer="deleteAnswer"}}
-    {{/each}}
-  </ul>
-
-{{new-answer saveB="saveC" post=model}}
-<br>
-<span class = "boldText"> {{#link-to 'index'}} Back {{/link-to}} </span>
+    <br>
+  </div>
+</div>

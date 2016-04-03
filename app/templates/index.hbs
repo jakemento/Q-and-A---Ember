@@ -1,11 +1,17 @@
 
 <h2> Ask a question, get an answer: </h2>
+<center> <div id="border3">
+  <h3> Popular Questions: <span class="glyphicon glyphicon-fire"></span> </h3>
+  <h3> Unanswered Questions: <span class="glyphicon2 glyphicon-unchecked"></span> </h3>
+</div> </center>
+
+<hr>
+<center> {{new-question save2="save3"}} </center>
 <br>
 
 <ul>
   {{#each model.questions as |question|}}
+  {{answer-popularity question}}
       {{question-tile question=question update="update" deleteQuestion="deleteQuestion"}}
   {{/each}}
 </ul>
-
-<center> {{new-question save2="save3"}} </center>

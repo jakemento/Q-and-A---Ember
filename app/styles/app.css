@@ -1,14 +1,14 @@
 .boldText {
 font-size: 22px;
 font-weight: bold;
-font-family: fantasy;
+font-family: sans-serif;
 
 }
 
 .lessBold {
 font-size: 18px;
 font-weight: lighter;
-font-family: fantasy;
+font-family: sans-serif;
 
 }
 
@@ -35,6 +35,7 @@ li {
 .short {
   width: 75%;
   border-color: pink;
+  padding-top: 1%;
 }
 
 .btn {
@@ -45,4 +46,30 @@ li {
 .jumbotron {
   background-image: url(http://www.walkinggospel.com/wpcontent/uploads/2014/09/Q-and-A.jpg);
   background-repeat:repeat-x;
+}
+
+.glyphicon {
+  color: orange;
+  font-size: 22px;
+
+}
+.glyphicon2 {
+  color: red;
+  font-size: 22px;
+
+}
+
+#border {
+  border-style: inset;
+}
+#border2 {
+  border-style: inset;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+#border3 {
+  border-style: inset;
+  width: 27%;
 }

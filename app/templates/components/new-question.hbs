@@ -1,6 +1,8 @@
+<button {{action 'questionFormShow'}}> Add a Question </button>
+
 {{#if addNewQuestion}}
-<h1>New Question</h1>
   <div>
+    <br>
     <form>
       <div class="form-group">
         <label for="text">Question:</label>
@@ -20,6 +22,5 @@
       <button {{action 'save1'}}>Save</button>
     </form>
   </div>
-{{else}}
-  <button {{action 'questionFormShow'}}> New Question </button>
+  <button {{action 'questionFormHide'}}> Cancel </button>
 {{/if}}

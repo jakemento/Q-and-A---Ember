@@ -54,7 +54,7 @@ li {
 
 }
 .glyphicon2 {
-  color: red;
+  color: yellow;
   font-size: 22px;
 
 }
@@ -72,4 +72,13 @@ li {
 #border3 {
   border-style: inset;
   width: 27%;
+}
+
+.red {
+  color: red;
+}
+
+.admin {
+  color: red;
+  font-size: 14px;
 }

@@ -3,6 +3,7 @@
 <center> <div id="border3">
   <h3> Popular Questions: <span class="glyphicon glyphicon-fire"></span> </h3>
   <h3> Unanswered Questions: <span class="glyphicon2 glyphicon-unchecked"></span> </h3>
+  <h3> Admin post: <a span class="admin"> ADMIN </a> </h3>
 </div> </center>
 
 <hr>
@@ -11,6 +12,9 @@
 
 <ul>
   {{#each model.questions as |question|}}
+  <div class="red">
+    {{admin-label question}}
+  </div>
   {{answer-popularity question}}
       {{question-tile question=question update="update" deleteQuestion="deleteQuestion"}}
   {{/each}}

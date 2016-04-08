@@ -91,7 +91,15 @@ li {
   border: 3px;
   border-style: solid;
   border-color: black;
-  width: 300px;
+  width: 200px;
   padding-top: .51%;
   float: right;
+  padding-right: 4%;
+  border-right-style: none;
+  border-left-style: none;
+  overflow: scroll;
+}
+
+.shifter {
+  padding-right: 10%;
 }

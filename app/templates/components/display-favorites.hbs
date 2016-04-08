@@ -1,6 +1,6 @@
 <h3 class="favorites"> Favorite Questions: </h3>
 <ol>
   {{#each favoriteQuestions.questions as |question|}}
-  <li>  {{question.text}} by {{question.author}} </li>
+  <li>{{#link-to 'question' question.id}}  {{question.text}} by {{question.author}} {{/link-to}} </li>
   {{/each}}
 </ol>

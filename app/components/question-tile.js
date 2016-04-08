@@ -4,6 +4,9 @@ export default Ember.Component.extend({
   favoriteQuestions: Ember.inject.service(),
   isAuthorShowing: false,
   updateQuestionForm: false,
+  questionAndAuthor: Ember.computed('question.text', 'question.author', function() {
+    return this.get('question.text')+ ' - ' + this.get('question.author');
+  }),
   actions: {
     authorShow: function() {
       this.set('isAuthorShowing', true);

@@ -3,36 +3,11 @@
 <br>
 <br>
 <br>
-<div class="questionList">
-  {{#rl-dropdown-container class="dropdown"}}
-    {{#rl-dropdown-toggle class="btn btn-default"}}
-      Navigate Site <span class="caret"></span>
-    {{/rl-dropdown-toggle}}
-
-    {{#rl-dropdown tagName="ul" class="dropdown-menu" closeOnChildClick="a:link"}}
-    <li> {{#link-to 'index' tagName='li'}}
-      {{link-to 'Home'}}
-    {{/link-to}}    </li>
-    <li> {{#link-to 'question' 0 tagName='li'}}
-      {{link-to 'question 1'}}
-      {{/link-to}}    </li>
-    <li> {{#link-to 'question' 1 tagName='li'}}
-      {{link-to 'question 2'}}
-      {{/link-to}}    </li>
-      <li> {{#link-to 'question' '-KEauc_IeuF1MaMCht-c' tagName='li'}}
-        {{link-to 'question 3'}}
-        {{/link-to}}    </li>
-    {{/rl-dropdown}}
-  {{/rl-dropdown-container}}
-</div>
 <br>
 <br>
 <div class="favoritesBorder">
-  {{display-favorites}}
+  {{display-favorites}} <br>
 </div>
-<br>
-<br>
-<br>
 </header>
 <div class = "container" id="shifter">
   {{outlet}}

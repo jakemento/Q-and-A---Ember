@@ -117,3 +117,7 @@ li {
   border-top-style: none;
   border-color: gray;
 }
+
+input[type="text"] {
+  font-size: 24px;
+}

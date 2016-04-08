@@ -121,3 +121,20 @@ li {
 input[type="text"] {
   font-size: 24px;
 }
+
+.home {
+  color: blue;
+  background-color: pink;
+  width: inherit;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.hover :hover {
+  color: white;
+}
+
+.spacer {
+  letter-spacing: .5px;
+}

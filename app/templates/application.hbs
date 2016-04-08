@@ -1,10 +1,18 @@
 <header class= "jumbotron">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  <br>
+  <br>
+  <br>
+  <div class="hover">
+    <div class="col-xs-1">
+    <center>  {{#link-to 'index'}} <h2 class="home"> Home </h2> {{/link-to}} </center>
+    </div>
+    <div class="col-xs-1">
+      {{#link-to 'contact'}} <h2 class="home"> Contact </h2> {{/link-to}}
+    </div>
+    <center> <div class="col-xs-1">
+      {{#link-to 'about'}} <h2 class="home"> About </h2> {{/link-to}}
+    </div> </center>
+  </div>  
 <div class="favoritesBorder">
   {{display-favorites}} <br>
 </div>

@@ -7,7 +7,7 @@
 </h2>
 
 <button {{action 'delete' question}}>Delete Question </button>
-
+<button {{action 'addToFavorites' question}}> Add to Favorites </button>
 
 <ul>
   {{#each model.answers as |answer|}}

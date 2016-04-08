@@ -1,7 +1,11 @@
 <h3 class="favorites"> Favorite Questions: </h3>
 <ol>
   {{#each favoriteQuestions.questions as |question|}}
-  <li>{{#link-to 'question' question.id}}  {{question.text}} by {{question.author}} {{/link-to}} </li>
-  <button class="btn btn-danger" {{action 'removeFromFavorites' question}}> X </button>
+    <div class="col-lg-1" id="spacing">
+      <div class="container">
+        <li>{{#link-to 'question' question.id}}  {{question.text}} <br> by {{question.author}} {{/link-to}} </li>
+        <button class="btn btn-danger" {{action 'removeFromFavorites' question}}> X </button>
+      </div>
+    </div>
   {{/each}}
 </ol>

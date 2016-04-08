@@ -1,9 +1,10 @@
-<div class="container" id="border">
+<div class="container" id="border4">
   <div class="col-md-6">
-
-    <h2> {{question.text}} </h2>
+    <div id="border5">
+      <h2> {{question.text}} </h2>
         {{question-detail question=model deleteQuestion="deleteQuestion"}}
         {{update-question question=model update="update"}}
+    </div>
     <hr>
     {{new-answer saveB="saveC" post=model}}
     <span class = "boldText"> {{#link-to 'index'}} Back {{/link-to}} </span>

@@ -91,9 +91,8 @@ li {
   border: 3px;
   border-style: solid;
   border-color: black;
-  width: 200px;
+  width: 100%;
   padding-top: .51%;
-  float: right;
   padding-right: 4%;
   border-right-style: none;
   border-left-style: none;
@@ -102,4 +101,20 @@ li {
 
 .shifter {
   padding-right: 10%;
+}
+
+#spacing {
+  width: 22%;
+}
+
+#border4 {
+  border-style: inset;
+}
+#border5 {
+  border-style: inset;
+  width: 555px;
+  float:left;
+  border-left-style: none;
+  border-top-style: none;
+  border-color: gray;
 }

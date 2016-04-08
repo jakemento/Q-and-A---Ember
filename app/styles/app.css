@@ -82,3 +82,16 @@ li {
   color: red;
   font-size: 14px;
 }
+
+.favorites {
+  color: blue;
+}
+
+.favoritesBorder {
+  border: 3px;
+  border-style: solid;
+  border-color: black;
+  width: 300px;
+  padding-top: .51%;
+  float: right;
+}
